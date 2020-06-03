@@ -1,0 +1,29 @@
+{% extends "cassandra/layout.html" %}
+{% load static %}
+{% block body %}
+<div id='sing_art_view'>
+</div>
+<div id="who_view">
+<h1>who is she?</h1>
+
+<p>artist, expert server, intermediate bartender, math hw enthusiatsic, hair braider extrodinare, walking sagitaruius definition</p>
+*****put astrological chart here
+</div>
+
+<div id='art_view'>
+    <div class="gallery">
+    {% for image in art %}
+    <figure>
+    <a href='#' data-message="{{image.id}}" class='art_img_btn'><img class='art_img' src="{{image.art_image.url}}"></a>
+    <figcaption class="art_label">{{image.label}}</figcaption>
+</figure>
+    {% endfor %}
+    </div>
+
+</div>
+
+<div id='nerd_view'>
+    git hub link bruh 
+    also maybe music interests and anaysis 
+</div>
+{% endblock %}

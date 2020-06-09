@@ -1,61 +1,38 @@
 .body{
     padding-top: 400px;
-    color: rgb(252, 18, 201);
+    color: rgb(158, 158, 158);
+    font-family: American Typewriter, serif;
+    letter-spacing: 6px;
+    font-size: x-large;
+    line-height: 400%;
 }
-#who{
-    margin-left: 200px !important;
+#bio{
+    margin-left: 500px;
+    margin-right: 500px;
+    padding-left: 300px;
+    text-align: center;
+    margin-top: -400px;
 }
+
 #art_view{
     display: none;
 }
 
-#flower2{
-    padding-top: 150px;
-    padding-left: 100px;
-    position: fixed;
-    z-index: 100000000;
-}
-#flower{
-    padding-top: 40px;
-    padding-right: 30px;
-    position: fixed;
-    z-index: 100000000;
-}
-#leaves{
-        padding-top: 0px;
-        position: fixed;
-        z-index: 90000000;
-        padding-right: 30px;
-        width: 350px;
-}
-#ps{
-    padding-top: 0px;
-        position: fixed;
-        z-index: 90000000;
-        padding-right: 30px;
-        width: 350px;
-}
 #logo{
-    padding-top: 0px;
-    position: fixed;
-    z-index: 90000000;
-    left:35%;
+    margin-bottom: 1px;
+    z-index: 900000;
     width: 500px;
-    opacity: 0.75;
-}
-#sparkles{
-    padding-top: 0px;
+    opacity: 100%;
     position: fixed;
-    z-index: 700000;
-    padding-right: 30px;
-    width: 500px;
+    margin-left: 1400px;
 }
 
 .navbar{
-   background-color: rgba(255, 182, 227, 0.692) !important;
+   background-color:  rgba(255, 182, 193, 0.801) !important;
    border: transparent!important;
    padding-top: 120px !important;
    z-index: 7000000 !important;
+   opacity: 70%;
 }
 .nav-link{
     color: whitesmoke!important;
@@ -64,11 +41,23 @@
     font-family: American Typewriter, serif;
     white-space: nowrap;
     letter-spacing: 6px;
+    z-index: 88000000 !important;
 
 }
 .nav-item{
-    margin-left:100px !important;
-   
+    padding-left:100px !important;
+    padding-right: 100px;
+    margin-left: 100px;
+    z-index: 70000000 !important;
+
+}
+#whoisshe{
+    width: 500px;
+    margin-left: 850px;
+    margin-right: 500px;
+    margin-top: -50px;
+    padding-top: 100px;
+    margin-bottom: -50px;
 }
 .art_img{
     width:350px;
@@ -76,29 +65,35 @@
     object-fit:cover;
     padding-left:40px;
     padding-right:10px;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 .art_label{
     font-size: large;
     white-space: nowrap;
     font-family: American Typewriter, serif;
+    font-weight: lighter;
     letter-spacing: 6px;  
-    color:pink;
-    display: flex;
-  align-items: center; }
+    color:black;
+    text-align: center;
+    padding-left: 20px;
+    padding-top: 20px;
+
     
 }
 
 .gallery {
+    margin-top: -80px;
     display: grid;
     grid-column-gap:5px;
-    grid-template-columns: repeat(1000, 1fr);
-
+    grid-template-columns: repeat(1000, 1fr)
 
 }
 .individual_art{
     left: 20%;
     position: absolute;
-    top: 50%;
+    border: 10px solid rgba(255, 182, 193, 0.582);
+
 }
 #sing_art_view{
     display: block;
@@ -110,12 +105,55 @@
     word-wrap:break-word;
     font-family: American Typewriter, serif;
     font-weight: lighter;
-    color:black;
+    color:grey;
     letter-spacing: 6px;
     display: block;
     opacity: 0.66; 
-    border: 10px solid pink;
     padding:20px;
 
 
+}
+.indv_label{
+    font-family: American Typewriter, serif; 
+    color:grey;
+    letter-spacing: 15px;
+    text-align: center;
+    padding-bottom: 100px;
+    opacity: 0.88; 
+    font-weight: lighter;
+    margin-top: 0px;
+}
+
+#cass{
+    width: 600px;
+    margin-left: 200px;
+    margin-top: -100px;
+}
+#who_view{
+    margin-top: -50px;
+}
+#chart{
+    margin-left: 1100px;
+    opacity: 0.66;
+    margin-top: 100px;
+}
+#artistic{
+    width: 500px;
+    margin-top: -100px;
+    margin-bottom: 200px;
+    position: fixed;
+}
+a{
+    color: rgb(248, 83, 152);
+}
+#more{
+    width: 1000px;
+    margin-left: 100px;
+    margin-right: 500px;
+    font-size: x-small;
+    line-height: 200%;
+    
+}
+#me{
+    margin-top: -500px;
 }

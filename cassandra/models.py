@@ -19,3 +19,22 @@ class Art(models.Model):
 
     def __str__(self):
         return self.label
+
+class Journal(models.Model):
+    entry=models.ImageField(upload_to='journal_img', null=True)
+    label=models.CharField(max_length=25, blank=True)
+    year=models.IntegerField(null=True)
+
+    def serialize(self):
+        return{
+         'id':self.id,
+         'entry':self.entry.url,
+         'label':self.label,
+         'year':self.year
+        }
+    
+    class Meta:
+        ordering = ['-year']
+
+    def __str__(self):
+        return self.label

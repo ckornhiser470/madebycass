@@ -7,11 +7,12 @@
     line-height: 400%;
 }
 #bio{
-    margin-left: 500px;
+    margin-left: 520px;
     margin-right: 500px;
     padding-left: 300px;
     text-align: center;
-    margin-top: -400px;
+    margin-top: -650px;
+    width: 900px;
 }
 
 #art_view{
@@ -21,14 +22,15 @@
 #logo{
     margin-bottom: 1px;
     z-index: 900000;
-    width: 500px;
-    opacity: 100%;
+    width: 600px;
+    opacity: 80%;
     position: fixed;
-    margin-left: 1400px;
+    margin-left: 1300px;
 }
 
 .navbar{
-   background-color:  rgba(255, 182, 193, 0.801) !important;
+   background-color:  rgba(255, 182, 193, 0.801);
+   background-image: url("/static/cassandra/img/watercolor.jpg")!important;
    border: transparent!important;
    padding-top: 120px !important;
    z-index: 7000000 !important;
@@ -47,7 +49,7 @@
 .nav-item{
     padding-left:100px !important;
     padding-right: 100px;
-    margin-left: 100px;
+    margin-left: 50px;
     z-index: 70000000 !important;
 
 }
@@ -69,21 +71,21 @@
     margin-left: 100px;
 }
 .art_label{
-    font-size: large;
+    font-size: small;
     white-space: nowrap;
     font-family: American Typewriter, serif;
     font-weight: lighter;
-    letter-spacing: 6px;  
-    color:black;
+    letter-spacing: 10px;  
+    color:grey;
     text-align: center;
-    padding-left: 20px;
+    padding-left: 30px;
     padding-top: 20px;
+    opacity: .9;
 
     
 }
 
 .gallery {
-    margin-top: -80px;
     display: grid;
     grid-column-gap:5px;
     grid-template-columns: repeat(1000, 1fr)
@@ -92,14 +94,17 @@
 .individual_art{
     left: 20%;
     position: absolute;
-    border: 10px solid rgba(255, 182, 193, 0.582);
+    width: 600px;
+    border: 5px solid rgba(255, 182, 193, 0.801) ;
+    margin-top: -50px;
 
 }
 #sing_art_view{
     display: block;
+    margin-top: -100px;
 }
 .description{
-    margin-left: 1000px;
+    margin-left: 1100px;
     font-size: xx-large;
     max-width:500px;
     word-wrap:break-word;
@@ -115,45 +120,160 @@
 }
 .indv_label{
     font-family: American Typewriter, serif; 
-    color:grey;
-    letter-spacing: 15px;
+    color:rgb(170, 170, 170);
+    letter-spacing: 20px;
     text-align: center;
     padding-bottom: 100px;
-    opacity: 0.88; 
+    opacity: 0.75; 
     font-weight: lighter;
-    margin-top: 0px;
+    margin-top: -50px;
+    letter-spacing: 25px;
 }
 
 #cass{
-    width: 600px;
-    margin-left: 200px;
-    margin-top: -100px;
+    width: 1000px;
+    margin-left: -50px;
+    margin-top: -250px;
 }
 #who_view{
     margin-top: -50px;
 }
 #chart{
-    margin-left: 1100px;
-    opacity: 0.66;
+    margin-left: 1300px;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 #artistic{
-    width: 500px;
-    margin-top: -100px;
+    width: 700px;
+    margin-top: -260px;
     margin-bottom: 200px;
+    margin-left: 50px;
     position: fixed;
+    opacity: 0.69;
 }
 a{
-    color: rgb(248, 83, 152);
+    color: rgb(247, 133, 181);
 }
 #more{
-    width: 1000px;
-    margin-left: 100px;
+    width: 1100px;
+    margin-left: 200px;
     margin-right: 500px;
-    font-size: x-small;
+    font-size: large;
     line-height: 200%;
+    margin-top: 50px;
     
 }
 #me{
-    margin-top: -500px;
+    margin-top: -700px;
+}
+hr{
+    margin-top: 100px;
+    width: 3000px;
+}
+
+#projects{
+    width: 1000px;
+    margin-left: 80px;
+    margin-top: -150px;
+    margin-bottom: -50px;
+    opacity: 0.85;
+
+}
+#proj{
+    width: 1000px;
+    margin-left: 600px;
+}
+#back{
+    width: 300px;
+    margin-left: 150px;
+    margin-top: -50px;
+    opacity: .66;
+}
+#reach{
+    margin-top: 100px;
+    letter-spacing: 16px;
+}
+#contact{
+    margin-left: 200px;
+    margin-bottom: 75px;
+
+}
+.entry{
+    width: 1000px;
+}
+.journal_entry{
+    margin-top: 100px;
+    margin-left: 500px;
+}
+#madebycass{
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+#journal_title, .entry_label, h1, h3{
+    letter-spacing: 25px;
+    font-weight: lighter;
+    margin-left: 50px;
+    opacity: 0.75;
+}
+#journal_title{
+    margin-left: 100px;
+    opacity: .5;
+    letter-spacing: 35px;
+    font-size: 200%;
+}
+#art_title{
+    position: fixed;
+    letter-spacing: 45px !important;
+    opacity: 0.5;
+    font-weight: lighter;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    margin-top: -150px;
+}
+p{
+    letter-spacing: 10px;
+    font-weight: lighter;
+    margin-left: 50px;
+
+}
+.controls button {
+    border:none;
+    cursor:pointer;
+    background:transparent;
+    background-size:contain;
+    background-repeat:no-repeat;
+ }
+ video{
+    background: transparent !important;
+    margin-bottom: 150px;
+ }
+h3{
+    color: rgb(255, 0, 106);
+    font-weight: 400;
+    letter-spacing: 35px;
+    opacity: .5;
+    margin-top: 100px;
+    margin-bottom: 40px;
+
+}
+#academic{
+    margin-left: 150px;
+    color: lightpink;
+    letter-spacing: 40px;
+}
+#academic_div{
+    margin-left: 150px;
+}
+#current{
+    color: lightpink;
+    letter-spacing: 40px;
+    margin-top: 80px;
+    margin-left: -50px;
+}
+#projects{
+    font-size: 250%;
+    letter-spacing: 40px;
+    opacity: .5;
+
 }

@@ -2,27 +2,33 @@
 {% load static %}
 {% block body %}
 <div id='sing_art_view'>
+    <a href='#' id='back_btn'><img id="back" width='200' src="{% static 'cassandra/img/back.png' %}"alt="back"/></a>
+    <div id='sing_art'></div>
 </div>
 <div id="who_view">
     <img id="whoisshe" src="{% static 'cassandra/img/whoisshe.png' %}"alt="whoisshe"/>
 <img id="cass" src="{% static 'cassandra/img/natcass.png' %}"alt="cass"/>
-<p id="bio">artist, math hw enthusiatsic, hair braider extrodinare, </p>
+<p id="bio">artist,<br> math hw enthusiatsic,<br> world explorer</p>
 <hr>
 <img id="chart" src="{% static 'cassandra/img/chart.png' %}"alt="chart"/>
 <div id='me'>
-<h1>a little more about me</h1>
-<p id="more">from early on in life, i never backed down. at age 7, i fought to play little league so i could impress my older brother,
-at age 10, i started a law firm called 'Help,Law,&Co', and at 17 talked my way into an advanced weight training class (really did it because i wanted a prom date and fyi was successful ). i've never been afraid of myself or a challenge,
-which i think is why i can often be described as an enigma. my passions range from doing my hair and makeup, to interior design, to listening and discussing music, to fitness and health, to artistic expression, to any kind of analytic/problem solving activity, to making anyone around me laugh. 
-i set my mind on something and it's hard for me to deter. flaws? to be honest, it definitely comes down to self worth which is such a tough thing to attain a perfect balance of. too much and you lose your grounding,
-too little and you automatically limit yourself. part of creating this website was to show off my skills in a way that a condensed resume and linkedin profile cannot. the other part is to affirm my worth to myself.
-BALI AND ADVENTURE 
+<h1 id="a_little">a little more about her</h1>
+<p id="more"> cassandra's passions range from experimenting with hair and makeup, to interior design, to listening and discussing all genres of music, to fitness and health, to artistic expression, to any kind of problem solving activity. she loves a good adventure whether something simple as going on a hike with friends or showing up to a foreign country with no plans.
 </p>
+<hr>
+<h1 id="reach">reach out to her</h1>
+<p id='contact'>
+    email her at <a href="mailto:ckornhiser@gmail.com" id='email'>ckornhiser@gmail.com</a> or message her on <a target="_blank" rel="noopener noreferrer"href="https://linkedin.com/in/cassandra-kornhiser">linkedin</a>
+</p>
+</hr>
 </div>
+<img id="madebycass" src="{% static 'cassandra/img/madebycass.png' %}"alt="madebycasss"/>
 </div>
 
 <div id='art_view'>
-    <img id="artistic" src="{% static 'cassandra/img/artistic.png' %}"alt="artistic"/>
+ <!--  <img id="artistic" src="{% static 'cassandra/img/artistic.png' %}"alt="artistic"/>--> 
+ <div><h1 id="art_title">artistic endeavors</h1>
+ </div>
     <div class="gallery">
     {% for image in art %}
         <div>
@@ -31,17 +37,43 @@ BALI AND ADVENTURE
 </div>
     {% endfor %}
 </div>
+<img id="madebycass" src="{% static 'cassandra/img/madebycass.png' %}"alt="madebycasss"/>
 </div>
 
 
 <div id='nerd_view'>
-    <h1>HEADER</h1>
+  <!-- <img id="projects" src="{% static 'cassandra/img/projs.png' %}"alt="projects"/>-->
+  <h1 id="projects">projects</h1>
     <hr>
 
-    <p>check out <a id='git'href="https://github.com/ckornhiser470">my github profile</a>, which includes a plant-based themed rip off of instagram as well as the files of this website</p>
-    <h1>academic</h1>
-<p>here's a paper i wrote about braid groups(pdf and laTex version)</p>
+   <div id='proj'>
+    <h1 id="current">current</h1>
+    <p>check out <a id='git'target="git" href="https://github.com/ckornhiser470">her github profile</a>, which includes a plant-based themed rip off of instagram as well as the files of this website</p>
+    <h3>sneak peak of app</h3>
+    <video width="800" height="700" controls>
+        <source src="{% static 'cassandra/img/planted_1.mov' %}" type="video/mp4">
+        <source src="{% static 'cassandra/img/planted_1.ogg' %}" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>
+    </div> 
+    <h1 id="academic">academic</h1>
+    <div id="academic_div">
+<p>here's a <a target="braids" href="{% static 'cassandra/img/Braid_Groups_Paper.pdf' %}">paper</a> she wrote about braid groups(pdf and laTex version)</p>
 <p>group paper and presentation on developing mathematcial modeling of tumors</p>
-    also maybe music interests and anaysis 
+<p><a target="ldm" href='http://fashion.ldminstitute.com/florence-trendforecasting/'>blog post </a> she wrote when in florence about street fashion</p>  
+<img id="madebycass" src="{% static 'cassandra/img/madebycass.png' %}"alt="madebycasss"/>
+</div>
+</div>
+
+
+<div id="journal_view">
+    <h1 id='journal_title'>streams of consciousness</h1>
+    {% for entry in journal %}
+    <div class="journal_entry">
+        <div class="entry_label">{{entry.label}}</div>
+        <a href='#'><img class='entry' src="{{entry.entry.url}}"></a>
+    </div>
+        {% endfor %}
+        <img id="madebycass" src="{% static 'cassandra/img/madebycass.png' %}"alt="madebycasss"/>
 </div>
 {% endblock %}

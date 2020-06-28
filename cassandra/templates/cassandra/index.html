@@ -1,14 +1,11 @@
 {% extends "cassandra/layout.html" %}
 {% load static %}
 {% block body %}
-<div id='sing_art_view'>
-    <a href='#' id='back_btn'><img id="back" width='200' src="{% static 'cassandra/img/back.png' %}"alt="back"/></a>
-    <div id='sing_art'></div>
-</div>
+
 <div id="who_view">
     <img id="whoisshe" src="{% static 'cassandra/img/whoisshe.png' %}"alt="whoisshe"/>
 <img id="cass" src="{% static 'cassandra/img/natcass.png' %}"alt="cass"/>
-<p id="bio">artist,<br> math hw enthusiatsic,<br> world explorer</p>
+<p id="bio">artist<br> math hw enthusiatsic<br> explorer</p>
 <hr>
 <img id="chart" src="{% static 'cassandra/img/chart.png' %}"alt="chart"/>
 <div id='me'>
@@ -39,7 +36,11 @@
 </div>
 <img id="madebycass" src="{% static 'cassandra/img/madebycass.png' %}"alt="madebycasss"/>
 </div>
-
+<div id='sing_art_view'>
+    <a href='#' id='back_btn'><img id="back" width='200' src="{% static 'cassandra/img/back.png' %}"alt="back"/></a>
+    <div id='sing_art'></div>
+    <img id="madebycass" src="{% static 'cassandra/img/madebycass.png' %}"alt="madebycasss"/>
+</div>
 
 <div id='nerd_view'>
   <!-- <img id="projects" src="{% static 'cassandra/img/projs.png' %}"alt="projects"/>-->
@@ -48,7 +49,7 @@
 
    <div id='proj'>
     <h1 id="current">current</h1>
-    <p>check out <a id='git'target="git" href="https://github.com/ckornhiser470">her github profile</a>, which includes a plant-based themed rip off of instagram as well as the files of this website</p>
+    <p>check out <a id='git'target="git" href="https://github.com/ckornhiser470">her github profile</a>, which includes a plant-based themed knock-off of instagram as well as the files of this website</p>
     <h3>sneak peak of app</h3>
     <video width="800" height="700" controls>
         <source src="{% static 'cassandra/img/planted_1.mov' %}" type="video/mp4">
@@ -58,7 +59,7 @@
     </div> 
     <h1 id="academic">academic</h1>
     <div id="academic_div">
-<p>here's a <a target="braids" href="{% static 'cassandra/img/Braid_Groups_Paper.pdf' %}">paper</a> she wrote about braid groups(pdf and laTex version)</p>
+<p>here's a <a target="braids" href="{% static 'cassandra/img/Braid_Groups_Paper.pdf' %}">paper</a> she wrote about braid groups</p>
 <p>group paper and presentation on developing mathematcial modeling of tumors</p>
 <p><a target="ldm" href='http://fashion.ldminstitute.com/florence-trendforecasting/'>blog post </a> she wrote when in florence about street fashion</p>  
 <img id="madebycass" src="{% static 'cassandra/img/madebycass.png' %}"alt="madebycasss"/>

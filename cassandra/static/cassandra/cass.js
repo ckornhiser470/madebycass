@@ -53,7 +53,7 @@ function showArt(artImages){
         fetch(`/art/${artID}`)
           .then(response => response.json())
           .then(artPiece =>{
-              const piece=`<div class='indv'><h1 class='indv_label'>${artPiece.label}</h1><img width='500' class="individual_art" src="${artPiece.art_image}"></img><p class="description">${artPiece.description}</p></div>`;
+              const piece=`<h1 class='indv_label'>${artPiece.label}</h1><p class="description">${artPiece.description}</p><img width='500' class="individual_art" src="${artPiece.art_image}"></img>`;
               document.querySelector('#sing_art').innerHTML=piece;
            
 

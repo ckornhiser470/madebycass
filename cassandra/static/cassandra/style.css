@@ -195,6 +195,7 @@ hr{
 #reach{
     margin-top: 100px;
     letter-spacing: 16px;
+    margin-left: 100px;
 }
 #contact{
     margin-top: 50px;
@@ -227,7 +228,6 @@ hr{
     font-size: 200%;
 }
 #art_title{
-    position: fixed;
     letter-spacing: 45px !important;
     opacity: 0.5;
     font-weight: lighter;
@@ -285,4 +285,7 @@ h3{
 }
 .sing_art{
     margin-top: -200px;
+}
+#a_little{
+    margin-left: 100px;
 }

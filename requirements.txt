@@ -7,7 +7,7 @@ cffi==1.14.0
 chardet==3.0.4
 click==7.1.2
 constantly==15.1.0
-cryptography==2.8
+cryptography==3.2
 daphne==2.5.0
 Django==3.0.3
 django-markdown==0.8.4

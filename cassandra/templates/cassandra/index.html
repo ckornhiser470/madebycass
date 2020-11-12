@@ -3,15 +3,28 @@
 {% block body %}
 
 <div id="who_view">
+    <div class="container">
+        <div id="who_first">
+
+
+<div id="who_second">
     <img id="whoisshe" src="{% static 'cassandra/img/whoisshe.png' %}"alt="whoisshe"/>
-<img id="cass" src="{% static 'cassandra/img/natcass.png' %}"alt="cass"/>
-<p id="bio">creator<br> math hw enthusiatsic<br> explorer</p>
+    <p id="bio">creator<br> student of life<br> explorer</p>
+</div>
 <hr>
-<img id="chart" src="{% static 'cassandra/img/chart.png' %}"alt="chart"/>
-<div id='me'>
+<div id="who_third"></div>
+<img id="cass" src="{% static 'cassandra/img/natcass.png' %}"alt="cass"/>
+<div id="who_fourth">
 <h1 id="a_little">a little more about her</h1>
 <p id="more"> cassandra's passions range from experimenting with hair and makeup, to interior design, to listening and discussing all genres of music, to fitness and health, to artistic expression, to any kind of problem solving activity. she loves a good adventure whether something simple as going on a hike with friends or showing up to a foreign country with no plans.
 </p>
+</div>
+</div>
+<hr>
+
+<img id="chart" src="{% static 'cassandra/img/chart.png' %}"alt="chart"/>
+<div id='me'>
+
 <hr>
 <h1 id="reach">reach out to her</h1>
 <p id='contact'>
@@ -21,6 +34,8 @@
 </div>
 <img id="madebycass" src="{% static 'cassandra/img/madebycass.png' %}"alt="madebycasss"/>
 </div>
+</div>
+
 
 <div id='art_view'>
  <!--  <img id="artistic" src="{% static 'cassandra/img/artistic.png' %}"alt="artistic"/>--> 
@@ -43,10 +58,8 @@
 </div>
 
 <div id='nerd_view'>
-  <!-- <img id="projects" src="{% static 'cassandra/img/projs.png' %}"alt="projects"/>-->
   <h1 id="projects">projects</h1>
     <hr>
-
    <div id='proj'>
     <h1 id="current">current + recent</h1>
     <p id='ux'>based on a prototype of an ethical investment app created over Spring 2020, here is <a id='behance'target="behance" href="https://www.behance.net/gallery/102604547/truVest">her version</a> of the presentation as well as the <a id='truVestOG'target="truVestOG" href="{% static 'cassandra/img/truvest.pdf' %}">original</a></p>

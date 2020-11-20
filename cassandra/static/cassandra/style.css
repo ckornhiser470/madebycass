@@ -81,8 +81,6 @@ h1 {
   z-index: 90000;
   max-width: 100%;
   height: auto;
-  position: fixed;
-  opacity: 10%;
 }
 #who_first {
   margin-top: 100px;

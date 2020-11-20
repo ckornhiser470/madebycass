@@ -79,11 +79,10 @@ h1 {
 #logo {
   margin-bottom: 1px;
   z-index: 90000;
-  opacity: 90%;
   max-width: 100%;
   height: auto;
   position: fixed;
-  opacity: 40%;
+  opacity: 10%;
 }
 #who_first {
   margin-top: 100px;

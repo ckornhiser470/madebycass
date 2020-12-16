@@ -1,0 +1,17 @@
+
+{% extends "cassandra/layout.html" %}
+{% load static %}
+{% block body %}
+
+   <div id='piece' class="center">
+        <h1>{{piece.label}}</h1>
+        <span class="center">
+            <img src="{{piece.art_image.url}}" alt="{{piece.label}"}>    
+            <div class="center">
+                <p>{{piece.description}}</p>
+            </div>
+        </span>
+      
+</div>
+
+{% endblock %}

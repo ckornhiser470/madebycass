@@ -1,0 +1,16 @@
+{% extends "cassandra/layout.html" %}
+{% load static %}
+{% block body %}
+
+
+<div id="journal_view">
+    <h1 id='journal_title'>streams of consciousness</h1>
+    <hr>
+    {% for entry in journal %}
+    <div class="journal_entry">
+        <div class="entry_label">{{entry.label}}</div>
+        <a href='#'><img class='entry' src="{{entry.entry.url}}"></a>
+    </div>
+        {% endfor %}
+</div>
+    {% endblock %}

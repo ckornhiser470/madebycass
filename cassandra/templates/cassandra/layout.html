@@ -7,6 +7,7 @@
     <head>
       <!--root password is Coolcool8# public key 2012-->
         <title>{% block title %}Cassandra Kornhiser{% endblock %}</title>
+        <meta charset="UTF-8"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link href="{% static 'cassandra/style.css' %}" rel="stylesheet">
         <link href="{% static 'cassandra/reset.css' %}" rel="stylesheet">
@@ -17,31 +18,40 @@
     <body>
         <!-- <img id="logo" src="{% static 'cassandra/img/logo#1.png' %}"alt="logo"/> -->
        
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a id="who" class="nav-link" href="#">who is she? <span class="sr-only">(current)</span></a>
+          <a id="who" class="nav-link" href="{% url 'index' %}">who is she? <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a id='art' class="nav-link" href="#">artistic endeavors</a>
+          <a id='art' class="nav-link" href="{% url 'art' %}"">artistic endeavors</a>
         </li>
         <li class="nav-item">
-          <a id="nerd" class="nav-link" href="#">projects</a>
+          <a id="nerd" class="nav-link" href="{% url 'projects' %}">projects</a>
         </li>
         <li class="nav-item">
-          <a id="journal" class="nav-link" href="#">journal entries</a>
+          <a id="journal" class="nav-link" href="{% url 'journal' %}">journal entries</a>
         </li>
       </ul>
     </div>
   </nav>
-  <div class="body">
+  <div class="content">
     {% block body %}
     {% endblock %}
-</div>
+
+    <footer>
+      <div>
+        <p>2020 Cassandra Kornhiser</p>
+        <img id="madebycass" src="{% static 'cassandra/img/madebycass.png' %}"alt="madebycasss"/>
+      </div>
+    </footer>
+  </div>
+
+ 
 
 </body>
 </html>

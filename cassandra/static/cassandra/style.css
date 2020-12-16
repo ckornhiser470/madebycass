@@ -1,13 +1,30 @@
-.body {
-  padding-top: 200px;
+/* Document Layout */
+
+.content {
   color: rgb(187, 185, 185);
   font-family: American Typewriter, serif;
   letter-spacing: 6px;
   font-size: x-large;
   line-height: 400%;
-  background-image: url("/static/cassandra/img/watercolor_background.jpg");
-  background-repeat: repeat;
-  overflow-x: scroll;
+  overflow-x: hidden;
+  /* background-image: url("/static/cassandra/img/watercolor_background.jpg");
+  background-repeat: repeat; */
+  padding: 50px;
+}
+footer {
+  margin-top: 200px !important;
+  border-top: 5px rgba(255, 192, 203, 0.562) solid !important;
+}
+footer div {
+  margin-top: 50px;
+}
+footer p {
+  text-align: right;
+  font-size: 8pt;
+}
+footer img {
+  margin-top: -75px !important;
+  opacity: 50%;
 }
 a {
   color: rgb(247, 133, 181);
@@ -24,6 +41,7 @@ p {
   letter-spacing: 10px;
   font-weight: lighter;
   margin-left: 50px;
+  overflow: hidden;
 }
 h3 {
   color: rgb(255, 0, 106);
@@ -36,38 +54,8 @@ h3 {
 h1 {
   transform: scale(0.6667);
   letter-spacing: 30px !important;
-}
-#journal_view,
-#nerd_view,
-#who_view {
-  overflow-x: hidden;
-}
-.navbar {
-  background-color: rgba(255, 182, 193, 0.801);
-  background-image: url("/static/cassandra/img/watercolor.jpg") !important;
-  border: transparent !important;
-  padding-top: 120px !important;
-  z-index: 7000000 !important;
-  opacity: 70%;
-  height: 100px !important;
-}
-.nav-link {
-  color: whitesmoke !important;
-  font-weight: lighter !important;
-  font-size: xx-small !important;
-  font-family: American Typewriter, serif;
-  white-space: nowrap;
-  letter-spacing: 10px;
-  z-index: 88000000 !important;
-}
-.nav-link:hover {
-  text-shadow: darkmagenta;
-}
-.nav-item {
-  padding-left: 75px !important;
-  padding-right: 75px;
-  z-index: 70000000 !important;
-  margin-bottom: 50px;
+  color: black;
+  opacity: 75%;
 }
 
 .container {
@@ -75,30 +63,60 @@ h1 {
   max-width: 80%;
   margin: 0 auto;
 }
+.center {
+  position: relative; /* where the next element will be automatically positioned */
+  display: inline-block; /* causes element width to shrink to fit content */
+  left: 50% !important; /* moves left side of image/element to center of parent element */
+  transform: translate(
+    -50%
+  ); /* centers image/element on "left: 50%" position */
+}
+.navbar {
+  /* background-color: rgba(255, 182, 193, 0.801); */
+  /* background-image: url("/static/cassandra/img/watercolor.jpg") !important; */
+  border: transparent !important;
+  padding-top: 120px !important;
+  z-index: 7000000 !important;
+  opacity: 70%;
+  height: 100px !important;
+  border-bottom: 1px rgb(201, 201, 201) solid !important;
+}
+.nav-link {
+  color: black !important;
+  font-size: x-small !important;
+  font-family: American Typewriter, serif;
+  white-space: nowrap;
+  letter-spacing: 5px;
+  z-index: 88000000 !important;
+}
+.nav-link:hover {
+  color: rgb(139, 0, 93) !important;
+}
 
-#logo {
-  margin-bottom: 1px;
-  z-index: 90000;
-  max-width: 100%;
-  height: auto;
+.nav-item {
+  padding-left: 75px !important;
+  padding-right: 75px;
+  z-index: 70000000 !important;
+  margin-bottom: 50px;
 }
-#who_first {
+
+/* Index */
+#who_is_she {
   margin-top: 100px;
-}
-#who_second {
   max-width: 100%;
-  margin-top: 500px;
-  margin-left: -350px;
-}
-#whoisshe {
-  max-width: 100%;
-  height: auto;
-  margin-left: 600px;
-  margin-top: -450px;
-  opacity: 80%;
 }
 #bio {
-  margin-left: 550px;
+  display: inline-block;
+  text-align: center;
+  border: 1px lightgrey solid;
+  font-size: 12pt;
+  letter-spacing: 20px;
+  width: 600px;
+  padding: 50px;
+  margin-top: 50px;
+  color: black;
+  max-width: 100%;
+  /* margin-left: 550px;
   text-align: center;
   margin-top: -200px;
   width: 700px;
@@ -109,45 +127,78 @@ h1 {
   border-color: whitesmoke;
   border-left: -100px;
   position: relative;
-  padding-left: -50px;
+  padding-left: -50px; */
 }
+#more_div {
+  margin-left: -250px;
+  margin-top: -100px;
+}
+#more_info {
+  margin-top: -500px;
+  margin-left: 350px;
+}
+#more_info h1 {
+  white-space: nowrap;
+  background-color: white;
+  margin-left: -150px;
+  margin-top: 100px;
+  z-index: 9000000;
+  max-width: 100%;
+  border: 0.5px pink solid;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+}
+#more_info p {
+  max-width: 100%;
+  width: 1000px;
+  margin-left: -50px;
+  font-size: large;
+  line-height: 200%;
+  margin-top: -50px;
+  font-weight: light;
+  transform: scale(0.667);
+  /* border: solid 2px rgb(255, 204, 242); */
+  padding: 35px;
+}
+
+#logo {
+  margin-bottom: 1px;
+  z-index: 90000;
+  max-width: 100%;
+  height: auto;
+}
+#contact {
+  margin-top: 100px;
+}
+#contact h1 {
+  text-align: center;
+  letter-spacing: 40px;
+  border-bottom: 0.5px pink solid;
+  margin-bottom: 50px;
+}
+#contact p {
+  margin-left: -50px;
+  margin-bottom: 50px;
+  font-size: 10pt;
+  width: 1000px;
+  line-height: 200%;
+}
+
+/* 
 #cass {
   max-width: 100%;
   height: auto;
   margin-top: 100px;
   margin-left: -150px;
 }
-#who_fourth {
-  margin-top: -500px;
-  margin-left: 200px;
-}
+
 #who_view {
   margin-top: -50px;
   margin-right: 100px;
-}
-#more {
-  width: 1100px;
-  margin-right: 500px;
-  font-size: large;
-  line-height: 200%;
-  margin-top: -25px;
-  font-weight: light;
-  transform: scale(0.667);
-  border-style: solid;
-  border-width: 2px;
-  border-color: whitesmoke;
-  padding: 35px;
-}
-#a_little {
-  white-space: nowrap;
-  background-color: white;
-  margin-left: -150px;
-  margin-top: 100px;
-  z-index: 9000000;
-  padding-left: 20px;
-  padding-right: 30px;
-  max-width: 140%;
-}
+} */
+/* 
 #chart {
   margin-left: 600px;
   margin-bottom: 100px;
@@ -173,18 +224,43 @@ h1 {
   border-width: 2px;
   border-color: whitesmoke;
   padding: 35px;
+} */
+
+/* Art View */
+#art_h1 {
+  margin-top: 150px;
+  width: 1200px;
+  opacity: 0.75;
+  letter-spacing: 50px !important;
+  margin-left: -300px;
+  margin-bottom: 25px;
+  border-bottom: 0.5px rgba(255, 192, 203, 0.644) solid;
 }
-#art_view {
-  display: none;
+.gallery {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  padding-left: 25px;
 }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  text-align: center;
+  vertical-align: middle;
+}
+
 .art_img {
-  width: 275px;
+  width: 250px;
   height: 300px;
   object-fit: cover;
-  padding-left: 40px;
-  padding-right: 10px;
-  margin-right: 50px;
-  margin-left: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  text-align: justify;
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
 }
 .art_label {
   font-size: xx-small;
@@ -197,36 +273,37 @@ h1 {
   margin-bottom: 50px;
 }
 
-.gallery {
-  display: grid;
-  grid-column-gap: 5px;
-  grid-template-columns: repeat(1000, 1fr);
+/* Individual Art Image */
+#piece {
+  margin-top: 50px;
+  margin-bottom: 200px;
 }
-#art_title {
-  margin-bottom: 25px;
-  margin-top: -200px;
-  opacity: 0.75;
-  letter-spacing: 50px !important;
-  margin-left: -50px;
-  position: fixed;
+#piece span {
+  margin-top: 50px;
+  width: 1200px;
+  flex-wrap: wrap;
+  display: flex;
+  padding: 0 4px;
+  text-align: center;
+  vertical-align: middle;
+}
+#piece img {
+  display: block;
+  width: 50%;
+  margin-left: 25%;
+  object-fit: cover;
+}
+#piece h1 {
   background-color: white;
+  white-space: nowrap;
+  max-width: 100%;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: black;
+  border-bottom: 0.1px solid black;
 }
-.individual_art {
-  margin-left: 400px;
-  width: 400px;
-  border: 5px solid rgba(255, 182, 193, 0.801);
-  padding: 30px;
-  margin-top: -600px;
-  display: block;
-}
-#sing_art_view {
-  display: block;
-  margin-top: -100px;
-  overflow-x: hidden;
-}
-.description {
-  margin-top: -550px;
-  margin-left: 900px;
+#piece p {
   max-width: 400px;
   word-wrap: break-word;
   font-family: American Typewriter, serif;
@@ -236,22 +313,8 @@ h1 {
   display: inline-block;
   font-size: medium;
   line-height: 300%;
-}
-.indv_label {
-  font-family: American Typewriter, serif;
-  color: rgb(170, 170, 170);
-  letter-spacing: 20px;
-  text-align: center;
-  padding-bottom: 150px;
-  opacity: 0.75;
-  font-weight: lighter;
-  margin-bottom: 500px;
-  letter-spacing: 25px;
-  margin-top: -200px;
-}
-#back {
-  width: 200px;
-  margin-left: 150px;
+  border: 0.5px pink solid;
+  margin-top: 50px;
 }
 
 #me {

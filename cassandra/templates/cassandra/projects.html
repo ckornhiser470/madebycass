@@ -1,0 +1,30 @@
+{% extends "cassandra/layout.html" %}
+{% load static %}
+{% block body %}
+
+<div id="projects">
+
+    <div id="conatiner">
+        <h1 id="current_title">current + recent</h1>
+        <div id="project_p1">
+    <p id='ux'>based on a prototype of an ethical investment app created over Spring 2020, here is <a id='behance'target="behance" href="https://www.behance.net/gallery/102604547/truVest">her version</a> of the presentation as well as the <a id='truVestOG'target="truVestOG" href="{% static 'cassandra/img/truvest.pdf' %}">original</a></p><br>
+    <p id='check_out'>check out <a id='git'target="git" href="https://github.com/ckornhiser470">her github profile</a>, which includes a plant-based themed knock-off of instagram as well as the files of this website</p>
+    </div>
+    <a href="{% url 'index' %}">Yoo</a>
+    <h3 id='sneak'>sneak peak of app</h3>
+    <hr id="video_hr">
+    <video width="800" height="700" controls>
+        <source src="{% static 'cassandra/img/planted_1.mov' %}" type="video/mp4">
+        <source src="{% static 'cassandra/img/planted_1.ogg' %}" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>
+      </div>
+        
+    <h1 id="academic">academic</h1>
+    <div id="academic_div">
+<p class="academic_p">here's a <a target="braids" href="{% static 'cassandra/img/Braid_Groups_Paper.pdf' %}">paper</a> she wrote about braid groups</p>
+<p class="academic_p"><a target="tumor_growth" href="{% static 'cassandra/img/Cancer_Tumor_Growth_Dynamics.pdf'%}">group paper</a> on developing a mathematcial modeling of tumor growth</p>
+<p class="academic_p"><a target="ldm" href='http://fashion.ldminstitute.com/florence-trendforecasting/'>blog post </a> she wrote when in florence about street fashion</p>  
+    </div>
+</div>
+    {% endblock %}

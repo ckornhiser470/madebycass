@@ -2,15 +2,15 @@
 {% load static %}
 {% block body %}
 
-
-<div id="journal_view">
-    <h1 id='journal_title'>streams of consciousness</h1>
-    <hr>
+<div class="container">
+<div class="center" id="journal">
+    <h1>streams of consciousness</h1>
+</div>
     {% for entry in journal %}
-    <div class="journal_entry">
-        <div class="entry_label">{{entry.label}}</div>
-        <a href='#'><img class='entry' src="{{entry.entry.url}}"></a>
+    <div class="journal_entry center">
+    <h1>{{entry.label}}</h1>
+        <img class='entry center' src="{{entry.entry.url}}">
     </div>
         {% endfor %}
-</div>
+    </div>
     {% endblock %}

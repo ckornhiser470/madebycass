@@ -6,19 +6,23 @@
     <div id="projects">
         <h1>current + recent</h1>
             <div id="recent_projs">
+                <div>
+                <p> currently, desiging a website for a local yoga studio
+                    <p>image</p>
+                </div>
+                </p>
                 <ul>
                     <li>
-                        <h2>Natours</h2>
+                        <a id="natours" href="{% url 'natours' %}"><h1>natours</h1></a>
                         <p><a id='git'target="git" href="https://github.com/ckornhiser470/natours">Web application</a> for tour bookings and completing transactions using Node.js. JS, Express, and MongoDB</p>
                     </li>
                 <li>
-                    <h2>TruVest</h2>
+                    <a id="truvest" href="{% url 'truvest' %}"><h1>truvest</h1></a>
                     <p> prototype of an ethical investment app created over Spring 2020, here is <a id='behance'target="behance" href="https://www.behance.net/gallery/102604547/truVest">her version</a> of the presentation as well as the <a id='truVestOG'target="truVestOG" href="{% static 'cassandra/img/truvest.pdf' %}">original</a></p><br>
                 </li>
               
                 <!-- <p>check out <a id='git'target="git" href="https://github.com/ckornhiser470">her github profile</a>, which includes a plant-based themed knock-off of instagram as well as the files of this website</p> -->
             </ul>
-            <img id="TV" src="{% static 'cassandra/img/tempTV.png' %}"alt="TV"/>
 
         </div>
     </div>

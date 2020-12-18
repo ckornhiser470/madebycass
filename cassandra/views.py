@@ -17,6 +17,15 @@ def bio(request):
 def projects(request):
     return render(request, "cassandra/projects.html")
 
+
+def natours(request):
+    return render(request, "cassandra/natours.html")
+
+
+def truvest(request):
+    return render(request, "cassandra/truvest.html")
+
+
 # Returns info about selected art piece to look closer
 
 

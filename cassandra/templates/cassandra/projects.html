@@ -3,29 +3,56 @@
 {% block body %}
 
 <div id="conatiner">
-    <div id="projects">
+    <div id="projects_div">
         <h1>current + recent</h1>
-            <div id="recent_projs">
-                <div>
-                <p> currently, desiging a website for a local yoga studio
-                    <p>image</p>
-                </div>
-                </p>
-                <ul>
+    </div>
+                    <!-- <ul>
+                        <li>
+                            <div id="laureli_div">
+                                <h2>laureli</h2>
+                                <p> currently, desiging a website and virtual spiritual space for a local yoga studio</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="natours_div_1">
+                                <a id="natours" href="{% url 'natours' %}"><h2>natours</h2></a>         
+                            </div>
+                        </li>
+                        
                     <li>
-                        <a id="natours" href="{% url 'natours' %}"><h1>natours</h1></a>
+                        <div id="truvest_div_1">
+                            <a id="truvest" href="{% url 'truvest' %}"><h2>truvest</h2></a>
+                        </div>
+                    </li>
+    </dv> -->
+    <div class="center">
+    <div id="row" class="row">
+        <div class="column_img"><a id="laureli" href=""><img src="{% static 'cassandra/img/laureli.png' %}" alt="laureli_logo"></a>
+        </div>
+        <div class="column_img"><a id="natours" href="{% url 'natours' %}"><img id="img_2"src="{% static 'cassandra/img/logo-green-round.png' %}" alt="natours_logo"></a>
+        </div>
+        <div class="column_img"><a id="truvest" href="{% url 'truvest' %}"><img src="{% static 'cassandra/img/truvest_logo.png' %}" alt="truvest_logo"></a>
+        </div>
+      </div>
+</div>
+</div>
+
+
+                <!-- <ul>
+                    <li>
+                        <a id="natours" href="{% url 'natours' %}"><h2>natours</h2></a>
                         <p><a id='git'target="git" href="https://github.com/ckornhiser470/natours">Web application</a> for tour bookings and completing transactions using Node.js. JS, Express, and MongoDB</p>
                     </li>
                 <li>
-                    <a id="truvest" href="{% url 'truvest' %}"><h1>truvest</h1></a>
+                    <a id="truvest" href="{% url 'truvest' %}"><h2>truvest</h2></a>
                     <p> prototype of an ethical investment app created over Spring 2020, here is <a id='behance'target="behance" href="https://www.behance.net/gallery/102604547/truVest">her version</a> of the presentation as well as the <a id='truVestOG'target="truVestOG" href="{% static 'cassandra/img/truvest.pdf' %}">original</a></p><br>
                 </li>
-              
+               -->
                 <!-- <p>check out <a id='git'target="git" href="https://github.com/ckornhiser470">her github profile</a>, which includes a plant-based themed knock-off of instagram as well as the files of this website</p> -->
-            </ul>
+            <!-- </ul>
 
         </div>
-    </div>
+    </div> -->
 <!-- 
     <h3 id='sneak'>sneak peak of app</h3>
     <hr id="video_hr">

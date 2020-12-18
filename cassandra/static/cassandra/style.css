@@ -96,6 +96,7 @@ h1 {
   white-space: nowrap;
   letter-spacing: 5px;
   z-index: 88000000 !important;
+  text-align: center;
 }
 .nav-link:hover {
   color: rgb(139, 0, 93) !important;
@@ -107,8 +108,22 @@ h1 {
   z-index: 70000000 !important;
   margin-bottom: 50px;
 }
+/*Index*/
 
-/* Index */
+#ck {
+  width: 400px;
+  margin-bottom: -100px;
+}
+#intro p {
+  text-align: center;
+  letter-spacing: 20px;
+  font-size: 8pt;
+  width: 1000px;
+  color: rgba(0, 0, 0, 0.61);
+  background-color: white;
+}
+
+/* Who is she*/
 #who_is_she {
   margin-top: 100px;
   max-width: 100%;
@@ -127,7 +142,6 @@ h1 {
 }
 #more_div {
   margin-left: -250px;
-  margin-top: -100px;
 }
 #more_info {
   margin-top: -500px;

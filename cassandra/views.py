@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import JsonResponse
-from .models import Art, Journal
+from .models import Art
 
 # Create your views here.
 
@@ -8,6 +8,10 @@ from .models import Art, Journal
 # Loads index.html on render
 def index(request):
     return render(request, "cassandra/index.html")
+
+
+def bio(request):
+    return render(request, "cassandra/bio.html")
 
 
 def projects(request):
@@ -22,10 +26,10 @@ def art(request):
     })
 
 
-def journal(request):
-    return render(request, "cassandra/journal.html", {
-        "journal": Journal.objects.all()
-    })
+# def journal(request):
+#     return render(request, "cassandra/journal.html", {
+#         "journal": Journal.objects.all()
+#     })
 
 
 def show_art(request, id):

@@ -15,24 +15,44 @@ footer {
   margin-top: 200px !important;
   border-top: 5px rgba(255, 192, 203, 0.562) solid !important;
 }
-footer div {
-  margin-top: 50px;
-}
+/* @media screen and (max-width: 999px) {
+  footer div{
+  } */
+
 footer p {
-  text-align: right;
-  font-size: 8pt;
+  text-align: left;
+  font-size: 10px;
+  max-width: 400px;
+  word-wrap: break-word;
+  line-height: 20px;
+  text-align: left;
+  margin-top: 50px;
+  position: relative;
+  display: block;
 }
-footer img {
-  margin-top: -75px !important;
-  opacity: 50%;
+@media screen and (max-width: 999px) {
+  footer p {
+    text-align: center;
+    font-size: 8px;
+  }
 }
+@media screen and (max-width: 999px) {
+  #madebycass {
+    margin-top: 50px !important;
+    left: 50% !important;
+    position: relative !important;
+    display: inline-block !important;
+    transform: translate(-50%);
+  }
+}
+
 #madebycass {
-  max-width: 100%;
   height: auto;
-  margin-left: 50px;
-  margin-top: 100px;
   opacity: 50%;
   margin-bottom: 200px;
+  max-width: 150px;
+  margin-top: 50px;
+  position: relative;
 }
 a {
   color: rgb(247, 133, 181);
@@ -51,7 +71,9 @@ p {
   margin-left: 50px;
   overflow: hidden;
 }
-
+h4 {
+  font-size: 10pt !important;
+}
 h1 {
   transform: scale(0.6667);
   letter-spacing: 30px !important;
@@ -76,6 +98,7 @@ h1 {
 
 /* Navbar */
 .navbar {
+  background-color: white !important;
   border: transparent !important;
   padding-top: 120px !important;
   z-index: 7000000 !important;
@@ -103,14 +126,27 @@ h1 {
   margin-bottom: 50px;
 }
 
-#brand_logo {
-  width: 50px;
-  position: relative;
-  margin-top: -50px;
-  margin-left: 50px;
-  opacity: 75%;
+@media screen and (min-width: 1000px) {
+  #brand_logo {
+    width: 50px;
+    position: relative;
+    margin-top: -50px;
+    margin-left: 50px;
+    opacity: 75%;
+  }
 }
-
+@media screen and (max-width: 999px) {
+  #brand_logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    left: 50% !important;
+    transform: scale(0.33);
+    margin-top: -150px !important;
+    /* moves left side of image/element to center of parent element */
+  }
+}
 /*Index*/
 
 #ck {
@@ -121,9 +157,15 @@ h1 {
   text-align: center;
   letter-spacing: 20px;
   font-size: 8pt;
-  width: 1000px;
+  max-width: 1000px;
   color: rgba(0, 0, 0, 0.61);
   background-color: white;
+}
+@media screen and (max-width: 600px) {
+  #intro p {
+    font-size: 15px;
+    line-height: 50px;
+  }
 }
 
 /* Who is she*/
@@ -150,6 +192,14 @@ h1 {
   margin-top: -500px;
   margin-left: 350px;
 }
+#ul_hi {
+  text-align: center;
+  background-color: beige;
+  margin-left: -300px;
+}
+#ul {
+  display: none;
+}
 #more_info h1 {
   white-space: nowrap;
   background-color: white;
@@ -173,7 +223,7 @@ h1 {
   transform: scale(0.667);
   border: solid 2px rgb(255, 204, 242);
   padding: 35px;
-  font-family: "Source Serif Pro", serif;
+  font-family: 'Source Serif Pro', serif;
   font-size: 16pt;
   color: rgba(0, 0, 0, 0.432);
   letter-spacing: 2px;
@@ -312,7 +362,7 @@ h1 {
 /* Natours View */
 
 #natours_div {
-  background-image: url("/static/cassandra/img/logo-green-round.png");
+  background-image: url('/static/cassandra/img/logo-green-round.png');
   background-repeat: no-repeat;
   height: 400px;
   background-position-x: center;
@@ -328,7 +378,7 @@ h1 {
 }
 #natours_p p {
   padding: 35px;
-  font-family: "Source Serif Pro", serif;
+  font-family: 'Source Serif Pro', serif;
   font-size: 16pt;
   color: rgba(0, 0, 0, 0.432);
   letter-spacing: 2px;
@@ -344,7 +394,7 @@ h1 {
 
 /* TruVest View */
 #truvest_div {
-  background-image: url("/static/cassandra/img/tempTV.png");
+  background-image: url('/static/cassandra/img/tempTV.png');
   background-repeat: no-repeat;
   height: 700px;
   width: 1200px;
@@ -361,7 +411,7 @@ h1 {
   max-height: 500px;
 }
 #truvest_p p {
-  font-family: "Source Serif Pro", serif;
+  font-family: 'Source Serif Pro', serif;
   font-size: 16pt;
   color: rgba(0, 0, 0, 0.432);
   letter-spacing: 2px;
@@ -378,7 +428,7 @@ h1 {
 /* Projects View */
 
 #laureli_div {
-  background-image: url("/static/cassandra/img/laureli.png");
+  background-image: url('/static/cassandra/img/laureli.png');
   background-repeat: no-repeat;
   height: 300px;
   background-position-x: 100px;
@@ -387,7 +437,7 @@ h1 {
 #laureli_div h2,
 #natours_div_1 h2,
 #truvest_div_1 h2 {
-  font-family: "Source Serif Pro", serif;
+  font-family: 'Source Serif Pro', serif;
   font-size: 16pt;
   color: rgba(0, 0, 0, 0.432);
   letter-spacing: 2px;
@@ -398,7 +448,7 @@ h1 {
   margin-left: 500px;
 }
 #natours_div_1 {
-  background-image: url("/static/cassandra/img/logo-green-round.png");
+  background-image: url('/static/cassandra/img/logo-green-round.png');
   background-repeat: no-repeat;
   background-size: 200px;
   height: 300px;
@@ -406,7 +456,7 @@ h1 {
   padding-top: 50px;
 }
 #truvest_div_1 {
-  background-image: url("/static/cassandra/img/truvest_logo.png");
+  background-image: url('/static/cassandra/img/truvest_logo.png');
   background-repeat: no-repeat;
   background-size: 300px;
   height: 300px;

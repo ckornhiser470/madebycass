@@ -1,4 +1,15 @@
-// document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
+  const navbarToggler = document.querySelector('#hi');
+  document.querySelector('#ul').style.display = 'none';
+
+  if (navbarToggler)
+        navbarToggler.addEventListener('click', function () {
+        document.querySelector('#ul').style.display = 'block'
+        });
+  
+
+    });
+
 //   // // //   const navLinks = document.querySelectorAll(".nav-link");
 //   // // //   for (var i = 0; i < navLinks.length) {
 //   // // //     var k = i + 1;

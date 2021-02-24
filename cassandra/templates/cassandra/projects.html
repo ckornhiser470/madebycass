@@ -4,37 +4,23 @@
 
 <div id="conatiner">
     <div id="projects_div">
-        <h1>current + recent</h1>
+        <p class="header center">current + recent</p>
     </div>
-                    <!-- <ul>
-                        <li>
-                            <div id="laureli_div">
-                                <h2>laureli</h2>
-                                <p> currently, desiging a website and virtual spiritual space for a local yoga studio</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div id="natours_div_1">
-                                <a id="natours" href="{% url 'natours' %}"><h2>natours</h2></a>         
-                            </div>
-                        </li>
-                        
-                    <li>
-                        <div id="truvest_div_1">
-                            <a id="truvest" href="{% url 'truvest' %}"><h2>truvest</h2></a>
-                        </div>
-                    </li>
-    </dv> -->
+        
+  
     <div class="center">
     <div id="row" class="row">
-        <div class="column_img"><a id="laureli" href=""><img src="{% static 'cassandra/img/laureli.png' %}" alt="laureli_logo"></a>
+        <div class="column_img" id="laurel_logo"><img src="{% static 'img/laureli.png' %}" alt="laureli_logo"><figcaption>coming soon</figcaption>
         </div>
-        <div class="column_img"><a id="natours" href="{% url 'natours' %}"><img id="img_2"src="{% static 'cassandra/img/logo-green-round.png' %}" alt="natours_logo"></a>
+        <div class="column_img" id="dm_logo"><a href="{% url 'dm' %}"><img src="{% static 'img/dmLogo.png' %}" id="dm_logo_img" alt="dm_logo"></a>
         </div>
-        <div class="column_img"><a id="truvest" href="{% url 'truvest' %}"><img src="{% static 'cassandra/img/truvest_logo.png' %}" alt="truvest_logo"></a>
+        <div class="column_img"><a id="natours" href="{% url 'natours' %}"><img id="natours_logo"src="{% static 'img/logo-green-round.png' %}" alt="natours_logo"></a>
+        </div>
+        <div class="column_img"><a id="truvest" href="{% url 'truvest' %}"><img src="{% static 'img/truvest_logo.png' %}" alt="truvest_logo"></a>
         </div>
       </div>
-</div>
+    </div>
+
 </div>
 
 

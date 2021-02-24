@@ -1,0 +1,25 @@
+
+{% extends "cassandra/layout.html" %}
+{% load static %}
+{% block body %}
+
+<div class="container">
+    <div class="center" id= "dm_div">
+        <img class="center" id="dm_logo_header" src="{% static 'img/dmLogo.png' %}" alt="dm_logo"/>
+
+        <p class="header">directmessage</p>
+    </div>
+    <div class="center" id="natours_p">
+        <img class="center" src="{% static 'img/dm.png'%}" alt="natours_img"/>
+        <div class="center">
+            <p>Originally a feature of a final project redesigned as a project of its own, directMessage is a Django web application that allows users to sign up, add friends, and start conversations. 
+           <br>
+           <br>
+           <span id='git'>Check out the <a href="https://directmessage-cass.herokuapp.com/">deployed application</a> as well as the <a href="https://github.com/ckornhiser470/DM">original files</a></span>
+        </p>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

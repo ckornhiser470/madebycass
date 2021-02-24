@@ -23,9 +23,21 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '&-jw_es7@8-f!s-d4jlwhmq-(l=(uayn5_&^j$-37&@_zony^j'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+
 
 ALLOWED_HOSTS = ['45.79.146.33', 'cassandrakornhiser.com', '127.0.0.1']
+# SSL support
+# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+# SECURE_SSL_REDIRECT = True
+# SESSION_COOKIE_SECURE = True
+# CSRF_COOKIE_SECURE = True
+
+# # session expire at browser close
+# SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
+# wsgi scheme
+# os.environ['wsgi.url_scheme'] = 'https'
 
 # Application definition
 
@@ -120,9 +132,9 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
-
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

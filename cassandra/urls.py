@@ -8,7 +8,9 @@ urlpatterns = [
     path("projects", views.projects, name="projects"),
     path("natours", views.natours, name="natours"),
     path("truvest", views.truvest, name="truvest"),
-    path("art", views.art, name="art"),    # API Routes
+    path("dm", views.dm, name="dm"),
+    path("art", views.art, name="art"),
 
+    # API Routes
     path("art/<int:id>", views.show_art, name="show_art")
 ]

@@ -26,6 +26,9 @@ def truvest(request):
     return render(request, "cassandra/truvest.html")
 
 
+def dm(request):
+    return render(request, "cassandra/dm.html")
+
 # Returns info about selected art piece to look closer
 
 

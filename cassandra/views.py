@@ -10,8 +10,8 @@ def index(request):
     return render(request, "cassandra/index.html")
 
 
-def bio(request):
-    return render(request, "cassandra/bio.html")
+def about(request):
+    return render(request, "cassandra/about.html")
 
 
 def projects(request):
@@ -20,6 +20,8 @@ def projects(request):
 
 def natours(request):
     return render(request, "cassandra/natours.html")
+def contact(request):
+    return render(request, "cassandra/contact.html")
 
 
 def truvest(request):

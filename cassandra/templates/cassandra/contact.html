@@ -1,0 +1,55 @@
+{% extends "cassandra/layout.html" %} {% load static %} {% block body %}
+
+<div id="contact">
+  <img
+    id="contact-img"
+    class="center"
+    src="{% static 'img/contact-cass.png'%}"
+    alt="contact-img"
+  />
+  <img
+    class="center"
+    id="reach-out"
+    src="{% static 'img/reach-out.png'%}"
+    alt="reach-out"
+  />
+  <!-- <p class="header center">reach out to her</p> -->
+  <p class="center">
+    <a href="mailto:cvkornhiser@gmail.com" id="email">cvkornhiser@gmail.com</a>
+    | 774 994 0048
+  </p>
+</div>
+<div id="contact-logos" class="center">
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    href="https://linkedin.com/in/ckornhiser"
+    ><img
+      id="linked-in-img"
+      class="contact-logos"
+      src="{% static 'img/linked-in-outline.png'%}"
+      alt="linked-in-img"
+  /></a>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    href="https://github.com/ckornhiser470"
+    ><img
+      id="github-img"
+      class="contact-logos"
+      src="{% static 'img/github-logo.png'%}"
+      alt="github-img"
+  /></a>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    href="https://www.behance.net/cassandkornhis"
+    ><img
+      id="behance-img"
+      class="contact-logos"
+      src="{% static 'img/behance-logo.png'%}"
+      alt="behance-img"
+  /></a>
+</div>
+
+{% endblock %}

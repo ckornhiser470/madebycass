@@ -2,8 +2,44 @@
 {% load static %}
 {% block body %}
 
-<div id="conatiner">
-    <div id="projects_div">
+
+<div id="proj-header">
+    <img src="{% static 'img/projects-header.png'%}" alt="projects"/>
+</div>
+<div class="wrapper">
+  <div id="one" ><a
+    target="_blank"
+    rel="noopener noreferrer"
+    href="https://crystalized-basic.herokuapp.com/"
+    ><img src="{% static 'img/crystalized-logo.png'%}" alt="crystal-card"/>
+    </a><p id="one-p" class='proj-p'>react + express + node.js + mongodb</p>
+    </div>
+    <div id="two"><a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="http://directmessage-cass.herokuapp.com/"
+        ><img src="{% static 'img/dm-logo.png'%}"alt="dm-card"/></a>
+    <p id="two-p"class='proj-p'>django + python + sqlite</p>
+    </div>
+    <div id="three"><a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://natours-by-cass.herokuapp.com/"
+        >
+        <img src="{% static 'img/crown-logo.png'%}"alt="natours-card"/></a>
+        <p id="three-p"class='proj-p'>express + node.js + mongodb</p>  
+    </div>
+    <div id="four">
+        <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.behance.net/gallery/102604547/truVest"
+        ><img src="{% static 'img/truvest-logo.png'%}" alt="truvest-card"/></a>
+        <p id="four-p"class='proj-p'>adobe + xd + photoshop</p>
+    </div>
+
+</div>
+    <!-- <div id="projects_div">
         <p class="header center">current + recent</p>
     </div>
         
@@ -19,7 +55,7 @@
         <div class="column_img"><a id="truvest" href="{% url 'truvest' %}"><img src="{% static 'img/truvest_logo.png' %}" alt="truvest_logo"></a>
         </div>
       </div>
-    </div>
+    </div> -->
 
 </div>
 

@@ -1,14 +1,43 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const navbarToggler = document.querySelector('#hi');
+document.addEventListener('DOMContentLoaded', function () {
+  const one = document.querySelector('#one');
+  const oneP = document.querySelector('#one-p');
+  const two = document.querySelector('#two');
+  const twoP = document.querySelector('#two-p');
+  const three = document.querySelector('#three');
+  const threeP = document.querySelector('#three-p');
+  const four = document.querySelector('#four');
+  const fourP = document.querySelector('#four-p');
+  one.onmouseover = (e) => {
+    oneP.style.display = 'block';
+  };
+  one.onmouseout = (e) => {
+    oneP.style.display = 'none';
+  };
+  two.onmouseover = (e) => {
+    twoP.style.display = 'block';
+  };
+  two.onmouseout = (e) => {
+    twoP.style.display = 'none';
+  };
+  three.onmouseover = (e) => {
+    threeP.style.display = 'block';
+  };
+  three.onmouseout = (e) => {
+    threeP.style.display = 'none';
+  };
+  four.onmouseover = (e) => {
+    fourP.style.display = 'block';
+  };
+  four.onmouseout = (e) => {
+    fourP.style.display = 'none';
+  };
   document.querySelector('#ul').style.display = 'none';
 
   if (navbarToggler)
-        navbarToggler.addEventListener('click', function () {
-        document.querySelector('#ul').style.display = 'block'
-        });
-  
-
+    navbarToggler.addEventListener('click', function () {
+      document.querySelector('#ul').style.display = 'block';
     });
+});
 
 //   // // //   const navLinks = document.querySelectorAll(".nav-link");
 //   // // //   for (var i = 0; i < navLinks.length) {

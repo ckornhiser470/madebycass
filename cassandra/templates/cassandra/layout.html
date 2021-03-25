@@ -2,24 +2,46 @@
 
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!--root password is Coolcool8# public key 2012-->
+    <title>{% block title %}Cassandra Kornhiser{% endblock %}</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/zmb4gjh.css">
 
-<head>
-  <!--root password is Coolcool8# public key 2012-->
-  <title>{% block title %}Cassandra Kornhiser{% endblock %}</title>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200;400&display=swap" rel="stylesheet">
-  <link href="{% static 'css/style.css' %}" rel="stylesheet">
-  <!-- <link href="{% static 'reset.css' %}" rel="stylesheet"> -->
-  <link rel="icon" href="{% static 'img/logo.png' %}" type="image/x-icon">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link href="{% static 'reset.css' %}" rel="stylesheet"> -->
+    <link rel="icon" href="{% static 'img/logo.png' %}" type="image/x-icon" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-</head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+  </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <body>
+    <a href="/"><img id='ck-logo' src="{% static 'img/logo-2.png'%}" alt='ck-logo'></a>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="{% url 'index' %}">
       <img id="brand_logo" src="{% static 'img/logo.png' %}" alt="ck_logo">
     </a>
@@ -29,34 +51,39 @@
 
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a id="who" class="nav-link" href="{% url 'bio' %}">who is she? </a>
           </li>
           <li class="nav-item">
             <a id='art' class="nav-link" href="{% url 'art' %}"">artistic endeavors</a>
         </li>
         <li class=" nav-item">
-              <a id="nerd" class="nav-link" href="{% url 'projects' %}">projects</a>
+              <a id="projects class="nav-link" href="{% url 'projects' %}">projects</a>
           </li>
         </ul>
       </div>
     </div>
-  </nav>
-  <div class="content">
-    {% block body %}
-    {% endblock %}
+  </nav> -->
+    <div class="content">
+      {% block body %} {% endblock %}
 
-    <footer>
-      <div class="container">
-        <p>2021 Cassandra Kornhiser</p>
-        <img id="madebycass" src="{% static 'img/madebycass.png' %}" alt="madebycasss" />
+      <!-- <footer>
+        <div class="container">
+          <p>2021 Cassandra Kornhiser</p>
+          <img
+            id="madebycass"
+            src="{% static 'img/madebycass.png' %}"
+            alt="madebycasss"
+          />
+        </div>
+      </footer> -->
+      <div class="navbar">
+        <a href="{% url 'about' %}">about</a>
+        <a href="{% url 'projects' %}">projects</a>
+        <a  href="{% url 'contact' %}">contact</a>
       </div>
-    </footer>
-  </div>
+    </div>
 
-
-  {% block script %}
-  <script src="{% static 'cassandra/cass.js' %}"></script>
-  {% endblock %}
-</body>
+    {% block script %}
+    <script src="{% static 'cass.js' %}"></script>
+    {% endblock %}
 
 </html>

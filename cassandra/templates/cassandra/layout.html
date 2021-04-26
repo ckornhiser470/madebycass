@@ -3,6 +3,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    {% block script %}
+    <script type="text/javascript" src="/static/js/cass.js"></script>
+    {% endblock %}
     <title>{% block title %}Cassandra Kornhiser{% endblock %}</title>
     <meta charset="UTF-8" />
     <link
@@ -61,8 +64,6 @@
       </div>
     </div>
 
-    {% block script %}
-    <script src="{% static 'cass.js' %}"></script>
-    {% endblock %}
+ 
 
 </html>

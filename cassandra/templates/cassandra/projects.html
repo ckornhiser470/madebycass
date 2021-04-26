@@ -1,105 +1,46 @@
-{% extends "cassandra/layout.html" %}
-{% load static %}
-{% block title %}
-Cassandra Kornhiser | Projects{% endblock %}
-{% block body %}
-
+{% extends "cassandra/layout.html" %} {% load static %} {% block title %}
+Cassandra Kornhiser | Projects{% endblock %} {% block body %}
 
 <div id="proj-header">
-    <img src="{% static 'img/projects-header.png'%}" alt="projects"/>
+  <img src="{% static 'img/projects-header.png'%}" alt="projects" />
 </div>
 <div class="wrapper">
-  <div id="one" ><a
-    target="_blank"
-    rel="noopener noreferrer"
-    href="https://crystalized-basic.herokuapp.com/"
-    ><img src="{% static 'img/crystalized-logo.png'%}" alt="crystal-card"/>
-    </a><p id="one-p" class='proj-p'>react + express + node.js + mongodb</p>
-    </div>
-    <div id="two"><a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="http://directmessage-cass.herokuapp.com/"
-        ><img src="{% static 'img/dm-logo.png'%}"alt="dm-card"/></a>
-    <p id="two-p"class='proj-p'>django + python + sqlite</p>
-    </div>
-    <div id="three"><a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://natours-by-cass.herokuapp.com/"
-        >
-        <img src="{% static 'img/crown-logo.png'%}"alt="natours-card"/></a>
-        <p id="three-p"class='proj-p'>express + node.js + mongodb</p>  
-    </div>
-    <div id="four">
-        <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.behance.net/gallery/102604547/truVest"
-        ><img src="{% static 'img/truvest-logo.png'%}" alt="truvest-card"/></a>
-        <p id="four-p"class='proj-p'>adobe + xd + photoshop</p>
-    </div>
-
+  <div id="one">
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://crystalized-basic.herokuapp.com/"
+      ><img src="{% static 'img/crystalized-logo.png'%}" alt="crystal-card" />
+    </a>
+    <p id="one-p" class="proj-p">react + express + node.js + mongodb</p>
+  </div>
+  <div id="two">
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      href="http://directmessage-cass.herokuapp.com/"
+      ><img src="{% static 'img/dm-logo.png'%}" alt="dm-card"
+    /></a>
+    <p id="two-p" class="proj-p">django + python + sqlite</p>
+  </div>
+  <div id="three">
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://natours-by-cass.herokuapp.com/"
+    >
+      <img src="{% static 'img/crown-logo.png'%}" alt="natours-card"
+    /></a>
+    <p id="three-p" class="proj-p">express + node.js + mongodb</p>
+  </div>
+  <div id="four">
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://www.behance.net/gallery/102604547/truVest"
+      ><img src="{% static 'img/truvest-logo.png'%}" alt="truvest-card"
+    /></a>
+    <p id="four-p" class="proj-p">adobe + xd + photoshop</p>
+  </div>
 </div>
-    <!-- <div id="projects_div">
-        <p class="header center">current + recent</p>
-    </div>
-        
-  
-    <div class="center">
-    <div id="row" class="row">
-        <div class="column_img" id="laurel_logo"><img src="{% static 'img/laureli.png' %}" alt="laureli_logo"><figcaption>coming soon</figcaption>
-        </div>
-        <div class="column_img" id="dm_logo"><a href="{% url 'dm' %}"><img src="{% static 'img/dmLogo.png' %}" id="dm_logo_img" alt="dm_logo"></a>
-        </div>
-        <div class="column_img"><a id="natours" href="{% url 'natours' %}"><img id="natours_logo"src="{% static 'img/logo-green-round.png' %}" alt="natours_logo"></a>
-        </div>
-        <div class="column_img"><a id="truvest" href="{% url 'truvest' %}"><img src="{% static 'img/truvest_logo.png' %}" alt="truvest_logo"></a>
-        </div>
-      </div>
-    </div> -->
-
-</div>
-
-
-                <!-- <ul>
-                    <li>
-                        <a id="natours" href="{% url 'natours' %}"><h2>natours</h2></a>
-                        <p><a id='git'target="git" href="https://github.com/ckornhiser470/natours">Web application</a> for tour bookings and completing transactions using Node.js. JS, Express, and MongoDB</p>
-                    </li>
-                <li>
-                    <a id="truvest" href="{% url 'truvest' %}"><h2>truvest</h2></a>
-                    <p> prototype of an ethical investment app created over Spring 2020, here is <a id='behance'target="behance" href="https://www.behance.net/gallery/102604547/truVest">her version</a> of the presentation as well as the <a id='truVestOG'target="truVestOG" href="{% static 'cassandra/img/truvest.pdf' %}">original</a></p><br>
-                </li>
-               -->
-                <!-- <p>check out <a id='git'target="git" href="https://github.com/ckornhiser470">her github profile</a>, which includes a plant-based themed knock-off of instagram as well as the files of this website</p> -->
-            <!-- </ul>
-
-        </div>
-    </div> -->
-<!-- 
-    <h3 id='sneak'>sneak peak of app</h3>
-    <hr id="video_hr">
-    <video width="800" height="700" controls>
-        <source src="{% static 'cassandra/img/planted_1.mov' %}" type="video/mp4">
-        <source src="{% static 'cassandra/img/planted_1.ogg' %}" type="video/ogg">
-      Your browser does not support the video tag.
-      </video>
-      </div> -->
-   
-      <!-- <div id="academic">
-        <h1>academic</h1>
-        <ul>
-            <li>
-                <h4>braid groups</h4>
-                <p class="academic_p">here's a <a target="braids" href="{% static 'cassandra/img/Braid_Groups_Paper.pdf' %}">paper</a> she wrote about braid groups</p></li>
-            <li>
-                <h4>cancer tumor growth</h4>
-                <p class="academic_p"><a target="tumor_growth" href="{% static 'cassandra/img/Cancer_Tumor_Growth_Dynamics.pdf'%}">group paper</a> on developing a mathematcial modeling of tumor growth</p></li>
-           <li>
-            <h4>fashion blog</h4>
-               <p class="academic_p"><a target="ldm" href='http://fashion.ldminstitute.com/florence-trendforecasting/'>blog post </a> she wrote when in florence about street fashion</p></li>
-        </ul>
-    </div> -->
-</div>
-    {% endblock %}
+{% endblock %}

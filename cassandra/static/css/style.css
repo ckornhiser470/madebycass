@@ -48,7 +48,6 @@
 /* Document Formatting/Layout */
 body {
   background-color: black;
-  overflow-y: hidden;
 }
 
 html,
@@ -89,10 +88,9 @@ h4 {
   overflow: hidden;
   position: fixed;
   bottom: 0;
-  float: left;
-  max-width: 100%;
   padding: 20px;
   animation: fade-2 ease 4s;
+  max-width: 100%;
 }
 .navbar a {
   float: left;
@@ -100,6 +98,7 @@ h4 {
   text-decoration: none;
   font-size: 17px;
   padding: 40px;
+  float: left;
   font-family: 'Libre Baskerville', serif;
   color: rgba(255, 255, 255, 0.262);
   letter-spacing: 6px;
@@ -167,17 +166,15 @@ h4 {
   align-content: space-evenly;
   align-items: center;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
+  .navbar a {
+    transform: scale(0.8);
+  }
+}
+@media screen and (max-width: 750px) {
   .wrapper {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(100px, auto);
-  }
-  .navbar {
-    display: flex;
-    justify-content: center !important
-    ;
-    position: relative;
-    float: none;
   }
   /* .navbar {
     margin-top: 10px;
@@ -201,9 +198,7 @@ h4 {
     margin-top: -150px !important;
   }
   .navbar {
-    /*     
-    margin-top: -200px; */
-    bottom: 0;
+    display: none;
   }
 }
 .wrapper div {
@@ -260,7 +255,7 @@ h4 {
   color: rgba(255, 255, 255, 0.562);
   font-family: baskerville-display-pt, serif;
   letter-spacing: 2px;
-  font-size: 15px;
+  font-size: 12px;
   padding: 15px;
   /* border: 0.1px solid grey; */
   width: 60%;
@@ -270,14 +265,31 @@ h4 {
 #bio-div {
   width: 100%;
 }
+
+@media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
+  #bio-div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  #bio-div {
+    width: 100%;
+  }
+}
+#img-div {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
 #hi-img {
-  max-width: 50%;
+  width: 50%;
+  float: left;
   animation: fade-2 ease 2s;
 }
 #xx-img {
-  max-width: 25%;
+  max-width: 20%;
   animation: fade-3 ease 5s;
-  display: inline-block;
   margin-top: 10%;
 }
 #contact {
